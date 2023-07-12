@@ -16,7 +16,7 @@ public class DataBaseAsStream {
 
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("oracle.jdbc.driver.OracleDriver");
-        Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@dt-anurag.technologic.com:1521:ORCL" , "EQ_SECURITY_PRODUCT" , "EQ_SECURITY_PRODUCT");
+        Connection connection = DriverManager.getConnection("<DB URL>" , "USERNAME" , "PASS");
         return connection;
     }
 
